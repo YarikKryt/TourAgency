@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #e08e45;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DeleteTourController">
+   <children>
+      <AnchorPane layoutY="78.0" prefHeight="322.0" prefWidth="700.0" style="-fx-background-color: #222222;">
+         <children>
+            <TableView fx:id="toursTableView" layoutX="12.0" layoutY="62.0" prefHeight="241.0" prefWidth="677.0">
+              <columns>
+                <TableColumn fx:id="tourIDTableColumn" prefWidth="45.0" text="TourID" />
+                <TableColumn fx:id="typeTableColumn" prefWidth="129.0" text="Type" />
+                  <TableColumn fx:id="priceTableColumn" prefWidth="58.0" text="Price" />
+                  <TableColumn fx:id="fromCityTableColumn" prefWidth="56.0" text="FromCity" />
+                  <TableColumn fx:id="toCityTableColumn" prefWidth="91.0" text="ToCity" />
+                  <TableColumn fx:id="transportTableColumn" prefWidth="75.0" text="Transport" />
+                  <TableColumn fx:id="mealsTableColumn" prefWidth="38.0" text="Meals" />
+                  <TableColumn fx:id="mealsPerDayTableColumn" prefWidth="78.0" text="MealsPerDay" />
+                  <TableColumn fx:id="durationInDaysTableColumn" prefWidth="89.0" text="DurationInDays" />
+              </columns>
+            </TableView>
+            <Button fx:id="deleteButton" alignment="CENTER" layoutX="428.0" layoutY="16.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="109.0" style="-fx-background-color: #347fc4;" text="Видалити" textAlignment="CENTER" textFill="#ebf5ee">
+               <font>
+                  <Font name="Serif Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="14.0" layoutY="16.0" prefHeight="31.0" prefWidth="407.0" text="Виберіть тур який хочете видалити та натисніть на кнопку:" textFill="#ebf5ee">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="deleteAllButton" alignment="CENTER" layoutX="548.0" layoutY="16.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="138.0" style="-fx-background-color: #347fc4;" text="Видалити все" textAlignment="CENTER" textFill="#ebf5ee">
+               <font>
+                  <Font name="Serif Bold" size="18.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+      <Label layoutX="230.0" layoutY="14.0" text="Tour Agency" textFill="#ebf5ee">
+         <font>
+            <Font name="Serif Bold" size="43.0" />
+         </font>
+      </Label>
+      <Button fx:id="returnButton" alignment="CENTER" layoutX="14.0" layoutY="23.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="162.0" style="-fx-background-color: #347fc4;" text="Назад" textAlignment="CENTER" textFill="#ebf5ee">
+         <font>
+            <Font name="Serif Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

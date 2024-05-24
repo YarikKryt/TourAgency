@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #e08e45;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ViewToursController">
+   <children>
+      <AnchorPane layoutY="78.0" prefHeight="322.0" prefWidth="700.0" style="-fx-background-color: #222222;">
+         <children>
+            <Button fx:id="applyFilterButton" alignment="CENTER" layoutX="441.0" layoutY="18.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="124.0" style="-fx-background-color: #347fc4;" text="Пошук" textAlignment="CENTER" textFill="#ebf5ee">
+               <font>
+                  <Font name="Serif Bold" size="18.0" />
+               </font>
+            </Button>
+            <TableView fx:id="toursTableView" layoutX="12.0" layoutY="62.0" prefHeight="241.0" prefWidth="677.0">
+              <columns>
+                <TableColumn fx:id="tourIDTableColumn" prefWidth="45.0" text="TourID" />
+                <TableColumn fx:id="typeTableColumn" prefWidth="127.0" text="Type" />
+                  <TableColumn fx:id="priceTableColumn" prefWidth="54.0" text="Price" />
+                  <TableColumn fx:id="fromCityTableColumn" prefWidth="58.0" text="FromCity" />
+                  <TableColumn fx:id="toCityTableColumn" prefWidth="91.0" text="ToCity" />
+                  <TableColumn fx:id="transportTableColumn" prefWidth="74.0" text="Transport" />
+                  <TableColumn fx:id="mealsTableColumn" prefWidth="38.0" text="Meals" />
+                  <TableColumn fx:id="mealsPerDayTableColumn" prefWidth="77.0" text="MealsPerDay" />
+                  <TableColumn fx:id="durationInDaysTableColumn" prefWidth="89.0" text="DurationInDays" />
+              </columns>
+            </TableView>
+            <ComboBox fx:id="transportComboBox" layoutX="138.0" layoutY="21.0" prefHeight="26.0" prefWidth="150.0" promptText="Вибір Транспорту" />
+            <TextField fx:id="durationTextField" layoutX="294.0" layoutY="21.0" prefHeight="25.0" prefWidth="141.0" promptText="Введіть кількість днів" />
+            <Button fx:id="cancelSearchButton" alignment="CENTER" layoutX="587.0" layoutY="18.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="99.0" style="-fx-background-color: #347fc4;" text="Відміна" textAlignment="CENTER" textFill="#ebf5ee">
+               <font>
+                  <Font name="Serif Bold" size="18.0" />
+               </font>
+            </Button>
+            <CheckBox fx:id="mealsCheckBox" layoutX="14.0" layoutY="21.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="124.0" text="З харчуванням?" textFill="#ebf5ee">
+               <font>
+                  <Font name="SansSerif Regular" size="13.0" />
+               </font></CheckBox>
+         </children></AnchorPane>
+      <Label layoutX="230.0" layoutY="14.0" text="Tour Agency" textFill="#ebf5ee">
+         <font>
+            <Font name="Serif Bold" size="43.0" />
+         </font>
+      </Label>
+      <Button fx:id="returnButton" alignment="CENTER" layoutX="14.0" layoutY="23.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="162.0" style="-fx-background-color: #347fc4;" text="Назад" textAlignment="CENTER" textFill="#ebf5ee">
+         <font>
+            <Font name="Serif Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
