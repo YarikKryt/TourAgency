@@ -6,9 +6,11 @@ import java.util.Properties;
 
 public class EmailSender {
     static public void emailMsg(String title, String msg){
-        String from = "kuspis.yaromir2@gmail.com";
-        String appPassword = "vnhg uybz gbzf cagi";
-        String to = "yaromyroleh.kuspis.oi.2023@lpnu.ua";
+        // Замініть дані from/to а також appPassword на свої почти, звідки та куди будуть надсилатись листи про критичні помилки. 
+        // appPassword - Це пароль додатку для надсилання листів з 'from' почти, він створюється в Gmail >>> Безпека >>> Двохетапна перевірка >>> Паролі додатків
+        String from = "fromYourEmail@example.com";
+        String appPassword = "app password for 'from' email"; //
+        String to = "toYourEmail@example.com";
 
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
